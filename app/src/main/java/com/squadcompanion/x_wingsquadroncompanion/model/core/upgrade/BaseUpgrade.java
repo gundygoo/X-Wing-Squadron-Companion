@@ -1,5 +1,8 @@
 package com.squadcompanion.x_wingsquadroncompanion.model.core.upgrade;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Bird on 6/15/2017.
  */
@@ -9,6 +12,7 @@ public class BaseUpgrade implements IBaseUpgrade{
     protected String mName;
     protected int mPointCost;
     protected String mCardText;
+    protected List<String> mFactionRestrictions;
 
     /**
      * Constructor for an upgrade
@@ -18,11 +22,12 @@ public class BaseUpgrade implements IBaseUpgrade{
      * @param mPointCost point cost of upgrade
      * @param mCardText text of upgrade
      */
-    public BaseUpgrade(UpgradeType mUpgradeType, String mName, int mPointCost, String mCardText) {
+    public BaseUpgrade(UpgradeType mUpgradeType, String mName, int mPointCost, String mCardText, List<String> factionList) {
         this.mUpgradeType = mUpgradeType;
         this.mName = mName;
         this.mPointCost = mPointCost;
         this.mCardText = mCardText;
+        this.mFactionRestrictions = factionList;
     }
 
     /**
@@ -36,6 +41,7 @@ public class BaseUpgrade implements IBaseUpgrade{
         mName = null;
         mPointCost = -1;
         mCardText = null;
+        mFactionRestrictions = new ArrayList<>();
     }
 
     @Override

@@ -16,13 +16,15 @@ public class Pilot {
     public ShipStatline mShipStatLine;
     public boolean mIsUnique;
     public String mShipName;
+    public int mPilotSkill;
 
-    public Pilot(List<UpgradeSlot> mUpgradeSlotList, String mName, int mPointCost, ShipStatline mShipStatLine, boolean isUnique, String shipName) {
+    public Pilot(List<UpgradeSlot> mUpgradeSlotList, String mName, int mPointCost, ShipStatline mShipStatLine, boolean isUnique, String shipName, int pilotSkill) {
         this.mUpgradeSlotList = mUpgradeSlotList;
         this.mName = mName;
         this.mPointCost = mPointCost;
         this.mShipStatLine = mShipStatLine;
         this.mIsUnique = isUnique;
         this.mShipName = shipName;
+        this.mPilotSkill = pilotSkill;
     }
 }

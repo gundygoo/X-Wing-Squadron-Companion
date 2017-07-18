@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/X-WingSquadronCompanion.iml" filepath="$PROJECT_DIR$/X-WingSquadronCompanion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/X-Wing-Squadron-Companion.iml" filepath="$PROJECT_DIR$/X-Wing-Squadron-Companion.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
